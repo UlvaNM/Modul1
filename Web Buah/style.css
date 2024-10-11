@@ -1,0 +1,136 @@
+* {
+    margin: 0; /* margin dan padding default dan menggunakan model box yang lebih mudah*/ 
+
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { /*Menentukan font dan pengaturan tampilan dasar untuk seluruh halaman. */ 
+    font-family: serif, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header { /*mwengatur latar belakang dan padding */ 
+    background-color: #f8a488;
+    padding: 10px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+/* Menghilangkan bullet point dan mengatur daftar navigasi menjadi flexbox untuk tata letak horizontal.*/ 
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+}
+
+.icon {
+    width: 30px; /* Sesuaikan ukuran ikon */
+    height: auto; /* Pastikan proporsi tetap */
+}
+
+.main-content {
+    background-image: url('background.jpg'); /* Add background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 50px;
+    text-align: center;
+    flex: 1;
+    position: relative; /* Relative positioning for child elements */
+    color: #FFFFFF;
+}
+
+.main-content h1 {
+    font-size: 30px; /* Ukuran font yang lebih besar */
+    color: #8B0000; /* Warna teks */
+    position: absolute; /* Posisi absolut */
+    top: 110px; /* Geser posisi vertikal */
+    left: 270px; /* Geser posisi horizontal */
+    margin-bottom: 20px; /* Jarak bawah dari judul ke tombol */
+}
+
+.btn-shop {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #ff69b4;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 120px; /* Jarak antara tombol dan judul */
+    margin-left: 300px;
+}
+
+.btn-shop:hover {
+    background-color: #000000;
+}
+
+.line {
+    width: 50%;
+    height: 5px;
+    background-color: #ff69b4;
+    margin: 0 auto;
+    position: relative;
+    top: 10px;
+}
+
+footer {
+    background-color: #f8a488;
+    padding: 10px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+}
+
+.social-icons a {
+    display: flex; /* Memastikan ikon sosial dalam satu baris */
+    align-items: center; /* Menyelaraskan ikon dan teks secara vertikal */
+    margin-left: 15px; /* Jarak antara ikon */
+    color: #000000;
+}
+
+.social-icons img {
+    width: 30px; /* Ukuran gambar */
+    margin-right: 5px; /* Jarak antara gambar dan teks */
+}
+
+.social-link span {
+    color: #FFFFFF;
+    font-weight: bold;
+}
