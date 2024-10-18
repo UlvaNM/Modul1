@@ -1,0 +1,78 @@
+body {
+    background-color:#6495ED; 
+    font-family: Arial, sans-serif; 
+    color: #333; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    margin: 0; /* Menghilangkan margin default pada body */
+}
+
+.container {
+    background-color: #FFFFFF; 
+    border-radius: 10px; 
+    padding: 20px; 
+    width: 400px; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Efek bayangan lembut di bawah container */
+}
+
+input[type="text"] {
+    width: calc(100% - 80px); /* Lebar input text menyesuaikan, dikurangi 80px untuk memberi ruang pada tombol */
+    padding: 10px; 
+    border: 2px solid #B0E0E6; 
+    border-radius: 5px; 
+    font-size: 1.1em; 
+    background-color: #FFF; 
+}
+
+button {
+    padding: 10px; 
+    border: none; 
+    border-radius: 5px; 
+    background-color: #E9967A; 
+    color: #333; 
+    cursor: pointer; 
+    transition: background-color 0.3s, transform 0.2s; /* Transisi halus saat background dan ukuran berubah */
+}
+
+button:hover {
+    background-color: #FF69B4; 
+    transform: scale(1.05);
+}
+
+ul {
+    list-style: none; 
+    padding: 0; 
+}
+
+li {
+    background-color: #FFFACD; 
+    margin: 10px 0; 
+    padding: 10px; 
+    border-radius: 5px;
+    display: flex; 
+    justify-content: space-between; /* Memisahkan teks tugas dan tombol (edit/delete) ke ujung kiri dan kanan */
+    align-items: center; 
+    color: #333; 
+}
+
+li .buttons { 
+    display: flex; 
+    gap: 10px; 
+}
+
+button.delete {
+    background-color: #FFB74D; 
+    border: none; 
+    border-radius: 5px; /* Membuat sudut tombol melengkung */
+    color: white;
+    padding: 5px 10px; 
+    cursor: pointer; 
+    transition: background-color 0.3s, transform 0.2s; /* Transisi halus saat background dan ukuran berubah */
+}
+
+button.delete:hover {
+    background-color: #FFA726; 
+    transform: scale(1.05); 
+}
